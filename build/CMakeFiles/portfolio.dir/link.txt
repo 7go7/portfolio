@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/portfolio.dir/link.d CMakeFiles/portfolio.dir/backend/main.cpp.o -o portfolio

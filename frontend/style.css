@@ -1,0 +1,139 @@
+:root {
+  --bg: #0f172a;
+  --card: #111827;
+  --accent: #38bdf8;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --radius: 1.2rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #1f2937 0%, #020617 55%);
+  font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  background: rgba(2, 6, 23, 0.7);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 8vw;
+  z-index: 10;
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.topbar nav a {
+  color: var(--text);
+  margin-left: 1.2rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.hero {
+  padding: 5rem 8vw 2rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 3.5vw, 3.6rem);
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  max-width: 50rem;
+}
+
+.hero-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 1rem;
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+}
+
+main {
+  padding: 2rem 8vw 4rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.08);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.7rem;
+}
+
+#experience-list .exp-item {
+  margin-bottom: 1.2rem;
+}
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.exp-role {
+  font-weight: 600;
+}
+.exp-place {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.exp-dates {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+.exp-desc {
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-left: 0;
+  list-style: none;
+}
+.tags li {
+  background: rgba(148, 163, 184, 0.05);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  font-size: 0.8rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .exp-header {
+    flex-direction: column;
+  }
+  .topbar {
+    flex-wrap: wrap;
+  }
+}

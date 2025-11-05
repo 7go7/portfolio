@@ -1,0 +1,3 @@
+/home/fox/Documents/Projects/portfolio/build/CMakeFiles/portfolio.dir
+/home/fox/Documents/Projects/portfolio/build/CMakeFiles/edit_cache.dir
+/home/fox/Documents/Projects/portfolio/build/CMakeFiles/rebuild_cache.dir

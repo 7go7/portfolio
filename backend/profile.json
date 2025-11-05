@@ -1,0 +1,33 @@
+{
+  "name": "Skyba Andrii",
+  "title": "C++ / Software Engineer",
+  "location": "Neumarkt i.d.OPf / Aachen, Germany",
+  "email": "info@andrii-skyba.de",
+  "about": "Hybrid software engineer and systems specialist with 7+ years across C++/Python, Unreal, IT ops and cloud. I automate end-to-end workflows and maintain FlexNet license servers.",
+  "experience": [
+    {
+      "role": "IT Helpdesk / Systems Support",
+      "company": "IEHK (RWTH Aachen University) – Rechnergruppe",
+      "dates": "Jul 2023 – Present",
+      "description": "Windows/Linux admin, OPSI deployment, installs (SIMULIA/MICRESS), FlexNet, internal tools."
+    },
+    {
+      "role": "Software Developer",
+      "company": "Myrtana Project",
+      "dates": "2020 – 2025",
+      "description": "Automation of audio pipelines, dialog tooling, reviews."
+    },
+    {
+      "role": "Software Engineer (UE4/UE5)",
+      "company": "Nameless Tale",
+      "dates": "2017 – 2020",
+      "description": "Migration to UE4, gameplay systems, tests."
+    }
+  ],
+  "skills": ["C++","OpenGL/Vulkan", "Python","Unreal Engine 4/5","Linux/Windows Admin","FlexNet","SIMULIA","OPSI","Automation","AWS/Azure","Git","CI/CD", "Docker"],
+  "education": [
+    { "title": "Studies at RWTH Aachen", "place": "Aachen, Germany", "dates": "2023 – Present" },
+    { "title": "Studies at NTU 'KhPI'", "place": "Kharkiv, Ukraine", "dates": "2022 – Present" }
+  ],
+  "note": "This portfolio is served by a custom C++ backend."
+}
