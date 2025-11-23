@@ -1,14 +1,23 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Skyba Andrii – C++ / Software Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
+  <div class="background-fx"></div>
+
   <header class="topbar">
-    <div class="logo">Skyba Andrii</div>
+    <div class="logo">Skyba Andrii<span class="dot">.</span></div>
     <nav>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
@@ -18,63 +27,69 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1>C++ / Software Engineer</h1>
-      <p>
-        Hybrid software engineer & systems specialist (7+ years) — C++, Python, Unreal, IT ops,
-        automation, FlexNet, cloud (AWS/Azure). I build tools that reduce toil and connect workflows.
+  <section class="hero hidden">
+    <div class="hero-content">
+      <div class="badge-container">
+        <p class="badge">
+          <span class="status-indicator"></span>
+          Backend powered by custom C++ HTTP Server
+        </p>
+      </div>
+      <h1>C++ / Software <br>Engineer</h1>
+      <p class="hero-lead">
+        Hybrid software engineer & systems specialist (7+ years). I build robust tools that reduce toil and connect
+        workflows using C++, Python, and Cloud Infrastructure.
       </p>
-      <p class="hero-meta">
-        Aachen, Germany ·
-        <a href="mailto:andrii.h.skyba@gmail.com">andrii.h.skyba@gmail.com</a> ·
-        Tel: +49 (0)1575 6425442
-      </p>
-      <p class="badge">⚙ Backend for this site is powered by C++</p>
+      <div class="hero-meta">
+        <span>📍 Aachen, Germany</span>
+        <span>✉️ <a href="mailto:andrii.h.skyba@gmail.com">andrii.h.skyba@gmail.com</a></span>
+      </div>
     </div>
   </section>
 
-  <main>
-    <section id="about" class="card div1">
+  <main class="bento-grid">
+    <section id="about" class="card area-about hidden">
       <h2>About</h2>
       <p id="about-text">
-        Hybrid software engineer and systems specialist with 7+ years across Python/C++ development, Unreal Engine tooling, and IT operations. I automate end‑to‑end workflows—from OPSI‑driven Windows/Linux fleet management and Flexera license servers to custom RFID‑backed worker management and Arduino/Raspberry Pi devices. Experienced supporting simulation stacks (SIMULIA, MICRESS, Dragonfly, Inventor), building scalable services, and migrating workloads to AWS/Azure. Track record: −40% costs via cloud migration and −25% bugs through test automation. I thrive where I can ship robust tools, reduce toil, and unlock team productivity.
+        Hybrid software engineer...
       </p>
     </section>
 
-    <section id="experience" class="card div2">
+    <section id="experience" class="card area-exp hidden">
       <h2>Experience</h2>
       <div id="experience-list">
-        <!-- will be filled from C++ backend -->
       </div>
     </section>
 
-    <section id="skills" class="card div3">
+    <section id="skills" class="card area-skills hidden">
       <h2>Skills</h2>
       <ul class="tags" id="skills-list">
-        <!-- filled from API -->
       </ul>
     </section>
 
-    <section id="education" class="card div4">
+    <section id="education" class="card area-edu hidden">
       <h2>Education</h2>
-      <ul id="education-list">
-        <!-- filled from API -->
+      <ul id="education-list" class="clean-list">
       </ul>
     </section>
 
-    <section id="contact" class="card5">
+    <section id="contact" class="card area-contact hidden">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:andrii.h.skyba@gmail.com">andrii.h.skyba@gmail.com</a></p>
-      <p>Phone: +49 (0)1575 6425442</p>
-      <p>Location: Aachen, Germany</p>
+      <div class="contact-grid">
+        <a href="mailto:andrii.h.skyba@gmail.com" class="contact-btn">Email Me</a>
+        <div class="contact-details">
+          <p>+49 (0)1575 6425442</p>
+          <p>Aachen, Germany</p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© <span id="year"></span> Skyba Andrii. Backend implemented in C++ (single-file HTTP server).</p>
+    <p>© <span id="year"></span> Skyba Andrii. <span class="footer-tech">Server: C++ (Zero Dependencies)</span></p>
   </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>
